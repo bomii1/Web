@@ -41,7 +41,7 @@ html, body {
     top: 60%;
     transform: translate(-60%,-60%);
 
-    width: 60%;
+    width: 800px;
     height: auto;
 }
 
@@ -49,7 +49,7 @@ html, body {
     display: inline-block;
     position: absolute;
     top:10%;
-    right: 6%;
+    right: 9%;
     font-size: 15px;
 }
 
