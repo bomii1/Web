@@ -9,7 +9,7 @@ html, body {
     color: midnightblue;
 }
 
-#logo1 {
+#logo {
     display: inline-block;
     position: absolute;
     text-decoration: none;
@@ -39,7 +39,7 @@ html, body {
     position: absolute;
     left: 70%;
     top: 60%;
-    transform: translate(-50%,-50%);
+    transform: translate(-60%,-60%);
 
     width: 60%;
     height: auto;

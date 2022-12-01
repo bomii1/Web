@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<head><title>Document</title>
+<head><title>Hanok</title>
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href=".\Hanok\start.css">
-    <style>
-    @keyframes season {
-        
-    }    
-    </style>
+    <script>
+        window.onload = function () {
+            i = 1;
+            setInterval(function () {
+                var pic = document.getElementById('imageContainer');
+                pic.setAttribute("src",(".\\Hanok\\img\\season" + (i % 4 + 1) + ".jpg"));
+                i++;
+            },6000);
+        }
+    </script>
 </head>
 <body>
-<a id="logo1" href="index.html">
+<a id="logo" href="index.html">
     Hanok<br>
     <p style="color: midnightblue; font-size: 25px;">ㅎㅏㄴㅇㅗㄱ</p>
 </a>
-<img id="imageContainer" src=".\\Hanok\\img\\spring.jpg" alt="경복궁">
+<img id="imageContainer" src=".\Hanok\img\season1.jpg" alt="경복궁">
 <div id="search">
     <input type="text" placeholder="search" style="font-size: 15px">
 </div>
