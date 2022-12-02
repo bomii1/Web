@@ -20,7 +20,7 @@ html, body {
     margin-left: 50px;
 }
 
-#startText {
+#welcomeText {
     display: inline-block;
     position: absolute;
     writing-mode: vertical-lr;
@@ -32,6 +32,14 @@ html, body {
     font-weight: bold;
     margin-top: 200px;
     margin-left: 50px;
+}
+
+#text {
+    display: inline-block;
+    position: absolute;
+    color: midnightblue;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 #imageContainer {
@@ -52,5 +60,37 @@ html, body {
     right: 9%;
     font-size: 15px;
 }
+
+#menubar {
+    color: midnightblue;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#menubar ul{
+    position: absolute;
+    top: 5%;
+    left: 37%;
+}
+
+#menubar ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 30px;
+}
+
+#menubar ul li a {
+    text-decoration: none;
+}
+
+li a:link,
+li a:visited,
+li a:hover,
+li a:active {
+    text-decoration: none;
+    color: midnightblue;
+}
+
+
 
 
