@@ -46,7 +46,7 @@ html, body {
     left: 70%;
     top: 60%;
     transform: translate(-60%,-60%);
-
+    border-radius: 10px;
     width: 800px;
     height: 520px;
 }
@@ -57,7 +57,7 @@ html, body {
     height: 470px;
     position: absolute;
     top: 28%;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
 }
 
 #search {
@@ -96,6 +96,12 @@ li a:hover,
 li a:active {
     text-decoration: none;
     color: midnightblue;
+}
+
+#aboutimage {
+    display: inline-block;
+    position: absolute;
+    transform: translate(50%, 50%);
 }
 
 
