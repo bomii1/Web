@@ -34,7 +34,7 @@ html, body {
     margin-left: 50px;
 }
 
-#text {
+.text {
     color: midnightblue;
     font-size: 20px;
     font-weight: bold;
@@ -98,11 +98,20 @@ li a:active {
     color: midnightblue;
 }
 
-#aboutimage {
+.tableSetting {
     display: inline-block;
     position: absolute;
-    transform: translate(50%, 50%);
+    color:midnightblue;
+    font-size: 20px;
+    font-weight: bold;
+    border-spacing: 40px;
 }
+
+.button {
+    width: auto;
+    height: auto;
+}
+
 
 
 
