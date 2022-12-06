@@ -107,6 +107,12 @@ li a:active {
     border-spacing: 40px;
 }
 
+#audio {
+    width: 100px;
+    height: 20px;
 
-
+    position: absolute;
+    top: 5%;
+    right: 10%;
+}
 
