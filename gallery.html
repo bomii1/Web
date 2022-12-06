@@ -3,6 +3,44 @@
   <meta charset="UTF-8">
   <link type="text/css" rel="stylesheet" href=".\Hanok\start.css">
   <title>About Hanok</title>
+  <style>
+    #gallery { position:absolute; margin-left: 230px; margin-top: 200px; }
+
+    #gallery::after { content: ""; display: block; clear: both; }
+
+    #gallery > li {float: left; margin: 10px 10px; list-style: none}
+
+    #gallery > li > a > img {
+      display: block;
+      width: 200px;
+      height: 150px;
+
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    #overlay {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+
+      background-color: rgba(0, 0, 0, 0.8);
+      display: none;
+    }
+
+    #photo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      max-width: 80%;
+      max-height: 80%;
+      border: 3px solid white;
+    }
+
+  </style>
 </head>
 <body>
 <a id="logo" href="index.html">
@@ -16,6 +54,92 @@
     <li><a href="gallery.html">gallery</a></li>
   </ul>
 </nav>
+<ul id="gallery">
+  <li>
+    <a href=".\Hanok\img\gallery1.jpg">
+      <img src=".\Hanok\img\gallery1.jpg" alt="gallery">
+    </a>
+  </li>
+  <li>
+    <a href=".\Hanok\img\gallery2.jpg">
+      <img src=".\Hanok\img\gallery2.jpg" alt="gallery">
+    </a>
+  </li>
+  <li>
+    <a href=".\Hanok\img\gallery3.jpg">
+      <img src=".\Hanok\img\gallery3.jpg" alt="gallery">
+    </a>
+  </li>
+  <li>
+    <a href=".\Hanok\img\gallery4.jpg">
+      <img src=".\Hanok\img\gallery4.jpg" alt="gallery">
+    </a>
+  </li>
+  <li>
+    <a href=".\Hanok\img\gallery5.jpg">
+      <img src=".\Hanok\img\gallery5.jpg" alt="gallery">
+    </a>
+  </li>
+  <li>
+    <a href=".\Hanok\img\gallery6.jpg">
+      <img src=".\Hanok\img\gallery6.jpg" alt="gallery">
+    </a>
+  </li>
+  <li>
+    <a href=".\Hanok\img\gallery7.jpg">
+      <img src=".\Hanok\img\gallery7.jpg" alt="gallery">
+    </a>
+  </li>
+  <li>
+    <a href=".\Hanok\img\gallery9.jpg">
+      <img src=".\Hanok\img\gallery9.jpg" alt="gallery">
+    </a>
+  </li>
+  <li>
+    <a href=".\Hanok\img\gallery10.jpg" alt="gallery">
+      <img src=".\Hanok\img\gallery10.jpg">
+    </a>
+  </li>
+  <li>
+    <a href=".\Hanok\img\gallery8.webp">
+      <img src=".\Hanok\img\gallery8.webp" alt="gallery">
+    </a>
+  </li>
+  <li>
+    <a href=".\Hanok\img\gallery11.webp">
+      <img src=".\Hanok\img\gallery11.webp" alt="gallery">
+    </a>
+  </li>
+  <li>
+    <a href=".\Hanok\img\gallery12.jpg">
+      <img src=".\Hanok\img\gallery12.jpg" alt="gallery">
+    </a>
+  </li>
+  <li>
+    <a href=".\Hanok\img\gallery13.jpg">
+      <img src="\Hanok\img\gallery13.jpg" alt="gallery">
+    </a>
+  </li>
+</ul>
+<div id="overlay">
+  <img src=".\Hanok\img\gallery1.jpg" alt="photo" id="photo">
+</div>
+<script>
+  var overlay = document.getElementById("overlay");
+  var photo = document.getElementById("photo");
+  var gallerys = document.querySelectorAll("#gallery > li > a");
 
+  for(var i=0; i<gallerys.length; i++) {
+    gallerys[i].addEventListener("click", function (e){
+      e.preventDefault();
+      photo.src = this.href;
+      overlay.style.display = "block";
+    });
+
+    overlay.addEventListener("click", function (){
+      this.removeAttribute("style");
+    });
+  }
+</script>
 </body>
 </html>
