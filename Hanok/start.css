@@ -1,23 +1,39 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
 html, body {
     width: 100%;
+    min-width: 750px;
     height: 100%;
+    color: midnightblue;
+}
+
+a {
+    text-decoration: none;
     color: midnightblue;
 }
 
 #logo {
     display: inline-block;
     position: absolute;
-    text-decoration: none;
     color: midnightblue;
-    font-size: 50px;
+    font-size: 3.15rem;
     font-weight: bold;
     margin-top: 20px;
     margin-left: 50px;
+}
+
+#homeTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: midnightblue;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
 }
 
 #welcomeText {
@@ -26,12 +42,17 @@ html, body {
     writing-mode: vertical-lr;
     text-orientation: upright;
     letter-spacing: 5px;
+    list-style: none;
     color: midnightblue;
     text-align: justify;
-    font-size: 30px;
+    font-size: 1.9rem;
     font-weight: bold;
-    margin-top: 200px;
-    margin-left: 50px;
+    left: 0.7%;
+    top: 27%;
+}
+
+#welcomeText > li {
+    margin-left: 2.5rem;
 }
 
 .text {
@@ -45,7 +66,7 @@ html, body {
     position: absolute;
     left: 70%;
     top: 60%;
-    transform: translate(-60%,-60%);
+    transform: translate(-60%, -60%);
     border-radius: 10px;
     width: 800px;
     height: 520px;
@@ -60,12 +81,26 @@ html, body {
     border-radius: 10px;
 }
 
-#search {
+#searchContainer {
     display: inline-block;
     position: absolute;
-    top:10%;
+    top: 10%;
     right: 9%;
+}
+
+#search {
+    position: relative;
+    display: block;
     font-size: 15px;
+}
+
+#audio {
+    margin-left: 30%;
+    display: block;
+    position: relative;
+    width: 70%;
+    height: 20px;
+    margin-bottom: 10px;
 }
 
 #menubar {
@@ -74,7 +109,7 @@ html, body {
     font-weight: bold;
 }
 
-#menubar ul{
+#menubar ul {
     position: absolute;
     top: 5%;
     left: 37%;
@@ -101,19 +136,10 @@ li a:active {
 .tableSetting {
     display: inline-block;
     position: absolute;
-    color:midnightblue;
+    color: midnightblue;
     font-size: 20px;
     font-weight: bold;
     border-spacing: 40px;
-}
-
-#audio {
-    width: 100px;
-    height: 20px;
-
-    position: absolute;
-    top: 5%;
-    right: 10%;
 }
 
 

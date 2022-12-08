@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<head><title>Hanok</title>
+<head>
+    <title>Hanok</title>
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href=".\Hanok\start.css">
     <script>
@@ -7,29 +8,13 @@
             i = 1;
             setInterval(function () {
                 var pic = document.getElementById('imageContainer');
-                pic.setAttribute("src",(".\\Hanok\\img\\season" + (i % 4 + 1) + ".jpg"));
+                pic.setAttribute("src", (".\\Hanok\\img\\season" + (i % 4 + 1) + ".jpg"));
                 i++;
-            },6000);
+            }, 6000);
         }
     </script>
 </head>
 <body>
-<audio id="audio" src=".\Hanok\bgm.mp3" controls autoplay loop></audio>
-<a id="logo" href="index.html">
-    Hanok<br>
-    <p style="color: midnightblue; font-size: 25px;">ㅎㅏㄴㅇㅗㄱ</p>
-</a>
-<img id="imageContainer" src=".\Hanok\img\season1.jpg" alt="경복궁">
-<div id="search">
-    <input type="text" placeholder="search" style="font-size: 15px">
-</div>
-<div id="welcomeText">
-    Welcome to Korea<br><br>
-    韓国へようこそ。<br><br>
-    Bienvenue en Corée.<br><br>
-    欢迎来到韩国。<br><br>
-    ยินดีต้อนรับสู่เกาหลีครับ<br><br>
-</div>
 <nav id="menubar">
     <ul>
         <li><a href="intro.html">Intro</a></li>
@@ -37,5 +22,21 @@
         <li><a href="gallery.html">gallery</a></li>
     </ul>
 </nav>
+<a id="logo" href="index.html">
+    Hanok<br>
+    <p style="color: midnightblue; font-size: 25px;">ㅎㅏㄴㅇㅗㄱ</p>
+</a>
+<div id="searchContainer">
+    <audio id="audio" src=".\Hanok\bgm.mp3" controls autoplay loop></audio>
+    <label for="search"></label><input id="search" type="text" placeholder="search" style="font-size: 15px">
+</div>
+<img id="imageContainer" src=".\Hanok\img\season1.jpg" alt="경복궁">
+<ul id="welcomeText">
+    <li>Welcome to Korea</li>
+    <li>韓国へようこそ。</li>
+    <li>Bienvenue en Corée.</li>
+    <li>欢迎来到韩国。</li>
+    <li>ยินดีต้อนรับสู่เกาหลีครับ</li>
+</ul>
 </body>
 </html>
